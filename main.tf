@@ -46,7 +46,7 @@ resource "aws_iam_role" "role" {
 }
 
 resource "aws_iam_instance_profile" "instance_profile" {
-  name = "${var.component}- ${var.env}- ec2-role"
+  name = "${var.component}- ${var.env}-ec2-role"
   role = aws_iam_role.role.name
 }
 
